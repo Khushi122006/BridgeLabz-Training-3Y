@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    padding: 40px;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 25px 0 15px;
+}
+
+.skills li {
+    padding: 10px;
+    margin: 5px;
+    background-color: #e8e8e8;
+}
+
+.skills li:nth-child(2) {
+    background-color: #ccc;
+}
+
+input[type="text"] {
+    border: 2px solid #333;
+}
+
+input[type="email"] {
+    border: 2px solid #555;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+a[href^="https"] {
+    color: #1565c0;
+}
+
+.links a {
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+.links a:hover {
+    color: #e63946;
+}
+
+.items p {
+    padding: 10px;
+    background-color: #eee;
+    margin: 5px;
+}
+
+.items p:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.parent > p {
+    color: #d62828;
+}
+
+.parent p {
+    font-weight: bold;
+}
+
+.adjacent + p {
+    color: #2a9d8f;
+}
+
+.adjacent ~ .general {
+    text-decoration: underline;
+}
+
+.content::before {
+    content: "Selectors Demo";
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content::after {
+    content: "End of Selectors";
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
