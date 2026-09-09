@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em 5%;
+    background-color: #172554;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding-top: 100px;
+}
+
+.portfolio {
+    min-height: 75vh;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.bio {
+    width: 50%;
+}
+
+.bio h2 {
+    font-size: 2.5rem;
+}
+
+.bio p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.profile {
+    width: 300px;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #172554;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        text-align: center;
+        min-height: 80vh;
+    }
+
+    .bio {
+        width: 90%;
+    }
+
+    main {
+        padding-top: 140px;
+    }
+}
