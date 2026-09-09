@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.pricing {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 8%;
+}
+
+.plan {
+    flex: 1;
+    min-height: 400px;
+    padding: 35px;
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #e0f2fe;
+}
+
+.popular {
+    background-color: #dbeafe;
+    border: 4px solid #2563eb;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.plan ul {
+    flex: 1;
+    padding: 0;
+    list-style: none;
+    line-height: 2;
+}
+
+.plan a {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.plan {
+    animation: fadeIn 1s ease;
+}
+
+@media (max-width: 750px) {
+    .pricing {
+        flex-direction: column;
+    }
+}
