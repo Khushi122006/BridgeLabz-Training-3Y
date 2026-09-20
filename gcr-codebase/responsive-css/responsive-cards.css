@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 25px);
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.card:hover {
+    background: #dbeafe;
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
