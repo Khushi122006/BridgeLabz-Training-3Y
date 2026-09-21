@@ -1,0 +1,23 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+.profile-image {
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+
+main {
+min-height: 70vh;
+}
+
+form {
+max-width: 600px;
+margin: auto;
+}
+
+footer {
+background-color: #212529;
+color: white;
+}

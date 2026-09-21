@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="py-4 text-center">
+        <div class="container">
+            <h1 class="fw-bold">Notifications Dashboard</h1>
+            <p class="lead mb-0">Stay updated with your latest notifications</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container py-5">
+
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+
+                    <h2 class="mb-4">Recent Notifications</h2>
+
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Success!</strong> Your profile has been updated successfully.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        <strong>Information:</strong> Your new assignment has been added to your dashboard.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Alert!</strong> Your password will expire in 3 days.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <section class="summary-box bg-light p-4 mt-4">
+                        <h3 class="fw-bold">Notification Summary</h3>
+                        <p class="mb-2">
+                            You have received <strong>3 new notifications</strong> today.
+                        </p>
+                        <p class="mb-0">
+                            Please review important updates and complete any pending actions.
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 Notifications Dashboard. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
